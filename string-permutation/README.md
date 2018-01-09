@@ -1,0 +1,3 @@
+# String Permutation
+
+Given two Strings, write a method to decide if one is a permutation of the other. 
