@@ -1,4 +1,4 @@
-#Stock Prices
+#Stock Price
 
 Suppose we could access yesterday's stock prices as an array, where:
 
