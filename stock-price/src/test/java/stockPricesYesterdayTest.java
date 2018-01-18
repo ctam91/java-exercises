@@ -40,7 +40,7 @@ public class stockPricesYesterdayTest {
     @Test
     public void testFour() {
         int [] input = new int[] {29, 45, 36, 1, 5, 11};
-        int expected = 16;
+        int expected = 26;
 
         assertEquals(expected, stockPrice.stockPricesYesterday(input));
     }
