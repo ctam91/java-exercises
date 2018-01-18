@@ -16,7 +16,7 @@ public class StockPrice {
         }
         return maxProfit;
         */
-        if(prices.length == 0 || prices.length == 1 || prices == null){
+        if(prices.length < 2 || prices == null){
             return 0;
         }
 
