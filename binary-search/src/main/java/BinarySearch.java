@@ -15,7 +15,7 @@ public class BinarySearch {
             throw new IllegalArgumentException("The input array must not be null");
         }
 
-        int mid = (int) Math.floor((left + right) / 2);
+        int mid = (left + right) / 2;
 
         if(nums[mid] == numToFind){
             return mid;
