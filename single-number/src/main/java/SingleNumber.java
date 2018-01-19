@@ -3,13 +3,17 @@ import java.util.HashMap;
 
 public class SingleNumber {
     public int findSingleNumber(int[] nums){
-        int result = 0;
+
+        if(nums.length == 1){
+            return nums[0];
+        }
+
         Arrays.sort(nums);
         for(int i = 0; i < nums.length-1; i+=2){
             if(nums[i] != nums[i+1]){
-                result = nums[i];
+                return nums[i];
             }
         }
-        return result;
+        return nums[nums.length-1];
     }
 }
