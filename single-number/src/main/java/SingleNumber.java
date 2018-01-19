@@ -30,7 +30,7 @@ public class SingleNumber {
         Arrays.sort(nums);
         for(int i = 0; i < nums.length-1; i+=2){
             if(nums[i] != nums[i+1]){
-                return nums[i];
+                result = nums[i];
             }
         }
         return result;
