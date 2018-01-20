@@ -1,4 +1,12 @@
 class Solution {
+    /**
+     * Given two sorted arrays, merge them
+     * @param a the first input array
+     * @param m the number of elements in array 1
+     * @param b the second input array
+     * @param n the number of elements in array 2
+     * @return return the sorted array
+     */
     public int[] merge(int[] a, int m, int[] b, int n) {
 
         if(m == 0 && n!=0){
