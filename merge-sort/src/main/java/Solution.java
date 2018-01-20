@@ -1,22 +1,21 @@
 public class Solution {
     public int[] mergeSort(int[] nums){
         if(nums.length < 2) return nums;
-        if(nums == null){
-            throw new IllegalArgumentException("Input array cannot be null");
-        }
 
         int middle = nums.length/2;
         int[] left = new int[middle];
         int[] right = new int[middle];
 
-        for(int i = 0; i < left.length; i++){
+        System.arraycopy(nums,0,left,0,left.length);
+        /*for(int i = 0; i < left.length; i++){
             left[i] = nums[i];
         }
-
-        for(int j = middle; j < nums.length; j++){
+        */
+        System.arraycopy(nums,middle,right,0, right.length);
+        /*for(int j = middle; j < nums.length; j++){
             right[j-middle] = nums[j];
         }
-
+        */
         mergeSort(left);
         mergeSort(right);
         merge(left,right,nums);
